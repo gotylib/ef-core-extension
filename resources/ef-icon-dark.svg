@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Упрощенная иконка с базой данных и буквами -->
+  <rect x="2" y="2" width="20" height="20" rx="2" fill="#512BD4" stroke="#C5C5C5" stroke-width="0.5"/>
+  
+  <!-- Буква E - упрощенная -->
+  <rect x="5" y="6" width="5" height="1.5" fill="white"/>
+  <rect x="5" y="6" width="1.5" height="10" fill="white"/>
+  <rect x="5" y="10.5" width="4" height="1.5" fill="white"/>
+  <rect x="5" y="14.5" width="5" height="1.5" fill="white"/>
+  
+  <!-- Буква F - упрощенная -->
+  <rect x="13" y="6" width="5" height="1.5" fill="white"/>
+  <rect x="13" y="6" width="1.5" height="10" fill="white"/>
+  <rect x="13" y="10.5" width="4" height="1.5" fill="white"/>
+</svg>
+

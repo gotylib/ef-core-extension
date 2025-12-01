@@ -1,0 +1,103 @@
+{
+  "name": "ef-core",
+  "displayName": "EF Core Tools",
+  "description": "Manage Entity Framework Core migrations with ease. Create, apply, rollback, and remove migrations directly from VS Code.",
+  "version": "0.0.1",
+  "publisher": "ef-core-tools",
+  "author": {
+    "name": "Your Name"
+  },
+  "license": "MIT",
+  "icon": "resources/icon.png",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "ef core",
+    "entity framework",
+    "migrations",
+    "database",
+    "dotnet",
+    ".net",
+    "csharp",
+    "c#",
+    "orm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ef-core-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ef-core-extension/issues"
+  },
+  "homepage": "https://github.com/your-username/ef-core-extension#readme",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ef-core.openPanel",
+        "title": "EF Core: Open Panel"
+      },
+      {
+        "command": "ef-core.configureProjects",
+        "title": "EF Core: Configure Projects"
+      },
+      {
+        "command": "ef-core.createMigration",
+        "title": "EF Core: Create Migration"
+      },
+      {
+        "command": "ef-core.updateDatabase",
+        "title": "EF Core: Update Database"
+      },
+      {
+        "command": "ef-core.removeMigration",
+        "title": "EF Core: Remove Last Migration"
+      },
+      {
+        "command": "ef-core.listMigrations",
+        "title": "EF Core: List Migrations"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ef-core-sidebar",
+          "title": "EF Core Tools",
+          "icon": "resources/ef-icon-final.svg"
+        }
+      ]
+    },
+    "views": {
+      "ef-core-sidebar": [
+        {
+          "type": "webview",
+          "id": "ef-core.sidebarView",
+          "name": "Migrations Manager"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.106.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.46.3",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
