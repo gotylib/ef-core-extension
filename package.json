@@ -3,7 +3,7 @@
   "displayName": "EF Core Tools",
   "description": "Manage Entity Framework Core migrations with ease. Create, apply, rollback, and remove migrations directly from VS Code.",
   "version": "0.0.1",
-  "publisher": "ef-core-tools",
+  "publisher": "gleb1004",
   "author": {
     "name": "Gleb Mikhalev"
   },
