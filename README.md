@@ -5,82 +5,82 @@ Visual Studio Code extension for managing Entity Framework Core migrations with 
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/ef-core-tools.ef-core?style=flat-square&label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=ef-core-tools.ef-core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-## ✨ Возможности
+## ✨ Features
 
-- 🗄️ **Боковая панель** для быстрого доступа к командам EF Core
-- ⚙️ **Настройка проектов** - сохранение Startup и Migration проектов для каждой workspace
-- ➕ **Создание миграций** - интерактивный UI для создания миграций
-- 🔄 **Управление БД** - применение, откат и удаление миграций
-- 📋 **Список миграций** - просмотр всех миграций проекта
-- 🏗️ **Scaffold DbContext** - генерация DbContext из существующей БД
-- 💾 **Автосохранение настроек** - настройки сохраняются для каждой workspace
+- 🗄️ **Sidebar Panel** for quick access to EF Core commands
+- ⚙️ **Project Configuration** - save Startup and Migration projects for each workspace
+- ➕ **Create Migrations** - interactive UI for creating migrations
+- 🔄 **Database Management** - apply, rollback, and remove migrations
+- 📋 **Migration List** - view all project migrations
+- 🏗️ **Scaffold DbContext** - generate DbContext from existing database
+- 💾 **Auto-save Settings** - settings are saved for each workspace
 
-## 🚀 Быстрый старт
+## 🚀 Quick Start
 
-1. **Откройте панель расширения:**
-   - Нажмите на иконку 🗄️ "EF Core Tools" в Activity Bar (слева)
-   - Или используйте команду `EF Core: Open Panel` из Command Palette (Ctrl+Shift+P)
+1. **Open the extension panel:**
+   - Click on the 🗄️ "EF Core Tools" icon in the Activity Bar (left side)
+   - Or use the `EF Core: Open Panel` command from Command Palette (Ctrl+Shift+P)
 
-2. **Настройте проекты:**
-   - Нажмите кнопку "📁 Настроить проекты"
-   - Выберите **Startup Project** (проект с Program.cs, обычно Web API)
-   - Выберите **Migration Project** (проект с DbContext)
+2. **Configure projects:**
+   - Click the "📁 Configure Projects" button
+   - Select **Startup Project** (project with Program.cs, typically Web API)
+   - Select **Migration Project** (project with DbContext)
    
-3. **Готово!** Теперь можете использовать все команды EF Core через UI
+3. **Done!** You can now use all EF Core commands through the UI
 
-## 📖 Использование
+## 📖 Usage
 
-### Создание миграции
-1. Введите название миграции в текстовое поле (например, `AddUserTable`)
-2. Нажмите "✨ Создать миграцию"
-3. Команда выполнится в терминале: `dotnet ef migrations add AddUserTable`
+### Creating a Migration
+1. Enter the migration name in the text field (e.g., `AddUserTable`)
+2. Click "✨ Create Migration"
+3. The command will execute in terminal: `dotnet ef migrations add AddUserTable`
 
-### Применение миграций к БД
-1. Нажмите "⬆️ Применить миграции"
-2. Подтвердите действие
-3. Выполнится: `dotnet ef database update`
+### Applying Migrations to Database
+1. Click "⬆️ Update Database"
+2. Confirm the action
+3. Executes: `dotnet ef database update`
 
-### Удаление последней миграции
-1. Нажмите "❌ Удалить последнюю миграцию"
-2. Подтвердите удаление
-3. Выполнится: `dotnet ef migrations remove`
+### Removing Last Migration
+1. Click "❌ Remove Last Migration"
+2. Confirm removal
+3. Executes: `dotnet ef migrations remove`
 
-### Откат к определённой миграции
-1. Нажмите "⏮️ Откатить к миграции"
-2. Введите название миграции (или `0` для полного отката)
-3. БД откатится к указанной миграции
+### Rolling Back to a Specific Migration
+1. Click "⏮️ Rollback to Migration"
+2. Enter the migration name (or `0` for complete rollback)
+3. Database will rollback to the specified migration
 
-## 🎯 Команды
+## 🎯 Commands
 
-Все команды доступны через Command Palette (Ctrl+Shift+P):
+All commands are available through Command Palette (Ctrl+Shift+P):
 
-- `EF Core: Open Panel` - Открыть панель расширения
-- `EF Core: Configure Projects` - Настроить проекты
-- `EF Core: Create Migration` - Создать миграцию
-- `EF Core: Update Database` - Применить миграции
-- `EF Core: Remove Last Migration` - Удалить последнюю миграцию
-- `EF Core: List Migrations` - Показать список миграций
+- `EF Core: Open Panel` - Open extension panel
+- `EF Core: Configure Projects` - Configure projects
+- `EF Core: Create Migration` - Create migration
+- `EF Core: Update Database` - Apply migrations
+- `EF Core: Remove Last Migration` - Remove last migration
+- `EF Core: List Migrations` - Show migration list
 
-## ⚙️ Требования
+## ⚙️ Requirements
 
-- .NET SDK (6.0 или выше)
-- EF Core Tools установлены глобально:
+- .NET SDK (6.0 or higher)
+- EF Core Tools installed globally:
   ```bash
   dotnet tool install --global dotnet-ef
   ```
 
-## 📝 Примечания
+## 📝 Notes
 
-- Настройки проектов сохраняются для каждой workspace отдельно
-- Все команды выполняются с указанием `--startup-project` и `--project`
-- Команды выполняются в терминале VS Code, где вы можете видеть вывод
+- Project settings are saved separately for each workspace
+- All commands are executed with `--startup-project` and `--project` specified
+- Commands run in VS Code terminal where you can see the output
 
-## 🐛 Известные проблемы
+## 🐛 Known Issues
 
-Пока нет известных проблем. Если найдёте баг, пожалуйста, создайте issue.
+No known issues at this time. If you find a bug, please create an issue.
 
-## 📄 Лицензия
+## 📄 License
 
 MIT
 
-**Приятной работы с EF Core! 🚀**
+**Enjoy working with EF Core! 🚀**
